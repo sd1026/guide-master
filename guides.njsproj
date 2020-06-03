@@ -36,6 +36,18 @@
     <Content Include="index.html">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="faqs.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="domestic.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="International.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="general.html">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="server.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
@@ -48,6 +60,9 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="TypeScript1.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="webpack-config.js">

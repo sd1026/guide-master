@@ -86,16 +86,24 @@
         <nav>
             <ul>
                 <img class="menu__logo" src="https://trackcovidcount.netlify.app/static/media/image.d7265326.png" alt="TrackCorona" />
-                <li class="menu__list-item"><a data-page="home" href="https://trackcovidcount.netlify.app/">Home</a></li>
-                <li class="menu__list-item"><a data-page="StayHome" href="#">Stay Home</a></li>
-                <li class="menu__list-item"><a data-page="FAQs" href="#">FAQs</a></li>
-                <div class="bubble"></div>
+                <button>
+                    <a class="menu__list-item" href="https://trackcovidcount.netlify.app/">Updates</a>
+                </button>
+
             </ul>
         </nav>
     </header>
 
     <script src="./app.tsx"></script>
     <div id="root"></div>
+
+    <div class="sidebar">
+        <a href="./domestic.html">Guidelines for Domestic Travelers</a>
+        <a href="./International.html">Guidelines for International Travelers</a>
+        <a href="./general.html">Stay Safe at Home</a>
+        <a href="./faqs.html">FAQs</a>
+
+    </div>
     <!-- scripts -->
     <script src="./dist/app-bundle.js"></script>
 </body>
