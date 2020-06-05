@@ -1,4 +1,5 @@
 ﻿<html amp>
+
 <head>
     <meta charset="utf-8">
     <title>Guidelines for People</title>
@@ -14,10 +15,10 @@
 
     <style amp-boilerplate>
         body {
-            -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
-            -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
-            -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
-            animation: -amp-start 8s steps(1,end) 0s 1 normal both
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
         }
 
         @-webkit-keyframes -amp-start {
@@ -87,8 +88,9 @@
     <header>
         <nav>
             <ul>
-                <img class="menu__logo" src="https://trackcovidcount.netlify.app/static/media/image.d7265326.png" alt="TrackCorona" />
-                <button>
+                <img class="menu__logo" src="https://trackcovidcount.netlify.app/static/media/image.d7265326.png"
+                    alt="TrackCorona" />
+                <button class="btn">
                     <a class="menu__list-item" href="https://trackcovidcount.netlify.app/">Updates</a>
                 </button>
 
@@ -96,10 +98,13 @@
         </nav>
     </header>
 
+    <button class="openbtn" onclick="openNav()">☰ Menu</button>
     <script src="./app.tsx"></script>
     <div id="root"></div>
 
-    <div class="sidebar">
+    <div id="mySidebar" class="sidebar_amp">
+
+        <button><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></button>
         <a href="./domestic.html">Guidelines for Domestic Travelers</a>
         <a href="./International.html">Guidelines for International Travelers</a>
         <a href="./general.html">Stay Safe at Home</a>
@@ -107,6 +112,19 @@
 
     </div>
     <!-- scripts -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "200px";
+            document.getElementById("main").style.marginLeft = "200px";
+        }
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
     <script src="./dist/app-bundle.js"></script>
 </body>
+
 </html>

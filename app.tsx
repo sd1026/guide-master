@@ -7,15 +7,17 @@ export class Hello extends React.Component {
     render() {
         return (
             <div class="container">
-                          
+                <button class="openbtn" onclick="openNav()">â˜° Menu</button>
+
                 <div class="jumbotron">
                     <p>
 
-            <h3>Novel Coronavirus Disease (COVID-19):</h3>
-          
-            <h4>Guidelines on the use of masks by public</h4>
-                                 
-            <ol>
+                        <h3>Novel Coronavirus Disease (COVID-19):</h3>
+
+                        <h4>Guidelines on the use of masks by public</h4>
+
+
+                        <ol>
                             <li><strong>Introduction</strong><br />A new disease named novel coronavirus (COVID-19) emerged in early
                     December 2019 in China and has now spread to over 90 countries. As of 9th March 2020, India has
                     reported 42 cases mostly among those who had traveled from affected countries. It causes a minor
@@ -60,7 +62,7 @@ export class Hello extends React.Component {
                     the mask itself. These steps are:<br />? Unfold the pleats; make sure that they are facing
                     down.<br />? Place over nose, mouth, and chin.<br />? Fit flexible nose piece (a metallic strip that
                     can easily be located) over the nose bridge.<br />? Secure with tie strings (upper string to be tied
-                    on top of the head above the ears –lower string at the back of the neck.)<br />? Ensure there are no
+                    on top of the head above the ears ï¿½lower string at the back of the neck.)<br />? Ensure there are no
                     gaps on either side of the mask, adjust to fit.<br />? While in use, avoid touching the mask.<br />?
                     Do not let the mask hanging from the neck.<br />? Change the mask after six hours or as soon as they
                     become wet.<br />? Disposable masks are never to be reused and should be disposed of.<br />? While
@@ -71,14 +73,13 @@ export class Hello extends React.Component {
                     contacts during home care should be disinfected using ordinary bleach solution (5%) or sodium
                     hypochlorite solution (1%) and then disposed of either by burning or deep burial.</li>
                         </ol>
-                        
-                    </p>
 
-                    <img src="https://drive.google.com/file/d/1eJ0VLySlZagZ-9iTtpWoqjtBugrX-U_x/view?usp=sharing" /> 
+                    </p>
                 </div>
             </div>
 
-            
+
+
         );
     }
 }

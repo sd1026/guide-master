@@ -1,4 +1,5 @@
 ﻿<html amp>
+
 <head>
     <meta charset="utf-8">
     <title>Guidelines for Domestic Travelers</title>
@@ -14,10 +15,10 @@
 
     <style amp-boilerplate>
         body {
-            -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
-            -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
-            -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
-            animation: -amp-start 8s steps(1,end) 0s 1 normal both
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
         }
 
         @-webkit-keyframes -amp-start {
@@ -87,20 +88,56 @@
     <header>
         <nav>
             <ul>
-                <img class="menu__logo" src="https://trackcovidcount.netlify.app/static/media/image.d7265326.png" alt="TrackCorona" />
-                <button><a class="menu__list-item" href="https://trackcovidcount.netlify.app/">Updates</a></button>
+                <img class="menu__logo" src="https://trackcovidcount.netlify.app/static/media/image.d7265326.png"
+                    alt="TrackCorona" />
+                <button class="btn"><a class="menu__list-item" href="https://trackcovidcount.netlify.app/">Updates</a></button>
             </ul>
         </nav>
     </header>
 
     <div class="container">
+        <button class="openbtn" onclick="openNav()">☰ Menu</button>
+        <div class="jumbotron1">
+            <p>
+            </p>
+        </div>
         <div class="jumbotron">
+            <a href="https://pedantic-meitner-8d8ab9.netlify.app/general"></a>
+            <a href="https://pedantic-meitner-8d8ab9.netlify.app/international"></a>
+            <a href="https://pedantic-meitner-8d8ab9.netlify.app/faqs"></a>
+
             <h2>Guidelines for Domestic Flights during COVID-19</h2>
-            <p><strong>Guidelines for domestic travel (air/train/inter-state bus travel)<br></strong> 1) Dos and Don'ts shall be provided along with tickets to the travelers by the agencies concerned.<br> 2) All passengers shall be advised to download the Arogya Setu app on their mobile devices.<br> 3) Suitable announcement about COVID-19 including precautionary measures to be followed shall be made at airports/railway station/bus terminals and in flights/trains/buses.<br> 4) The States/UTs shall ensure that all passengers shall undergo thermal screening at the point of departure and only asymptomatic passengers are allowed to board the flight/train/bus.<br> 5) During boarding and travel, all passengers shall use face covers/mask. They will also follow hand hygiene, respiratory hygiene, and maintain environmental hygiene.<br> 6) At airports/railway stations/ bus terminals required measures to ensure social distancing shall be taken.<br> 7) Airports/railway stations/bus terminals should be regularly sanitized/disinfected and availability of soaps and sanitizers shall be ensured.<br> 8) Thermal screening at the exit point shall be arranged.<br> 9) Asymptomatic passengers will be permitted to go with the advice that they shall self-monitor their health for 14 days. In case, they develop any symptoms, they shall inform the district surveillance officer or the state/national call center (1075).<br> 10) Those found symptomatic will be isolated and taken to the nearest health facility. They will be assessed for clinical severity at the health facility.<br> 11) Those having moderate or severe symptoms will be admitted to dedicated COVID Health facilities and managed accordingly.<br> 12) Those having mild symptoms will be given the option of home isolation or isolated in the COVID Care Centre (both public &amp; private facilities) as appropriate and tested as per ICMR protocol available at https://www.mohfw.gov.in/pdf/Revisedtestingguidelines.pdf.<br> If positive, they will continue in COVID Care Centre and will be managed as per clinical protocol.<br> If negative, the passenger may be allowed to go home, isolate himself/herself, and self-monitor his/her health for further 7 days. In case, any symptoms develop they shall inform the district surveillance officer or the state/national call center (1075).<br> <strong>NOTE: States can also develop their own protocol with regards to quarantine and isolation as per their assessment.</strong></p>
+            <p><strong>Guidelines for domestic travel (air/train/inter-state bus travel)<br></strong> 1) Dos and Don'ts
+                shall be provided along with tickets to the travelers by the agencies concerned.<br> 2) All passengers
+                shall be advised to download the Arogya Setu app on their mobile devices.<br> 3) Suitable announcement
+                about COVID-19 including precautionary measures to be followed shall be made at airports/railway
+                station/bus terminals and in flights/trains/buses.<br> 4) The States/UTs shall ensure that all
+                passengers shall undergo thermal screening at the point of departure and only asymptomatic passengers
+                are allowed to board the flight/train/bus.<br> 5) During boarding and travel, all passengers shall use
+                face covers/mask. They will also follow hand hygiene, respiratory hygiene, and maintain environmental
+                hygiene.<br> 6) At airports/railway stations/ bus terminals required measures to ensure social
+                distancing shall be taken.<br> 7) Airports/railway stations/bus terminals should be regularly
+                sanitized/disinfected and availability of soaps and sanitizers shall be ensured.<br> 8) Thermal
+                screening at the exit point shall be arranged.<br> 9) Asymptomatic passengers will be permitted to go
+                with the advice that they shall self-monitor their health for 14 days. In case, they develop any
+                symptoms, they shall inform the district surveillance officer or the state/national call center
+                (1075).<br> 10) Those found symptomatic will be isolated and taken to the nearest health facility. They
+                will be assessed for clinical severity at the health facility.<br> 11) Those having moderate or severe
+                symptoms will be admitted to dedicated COVID Health facilities and managed accordingly.<br> 12) Those
+                having mild symptoms will be given the option of home isolation or isolated in the COVID Care Centre
+                (both public &amp; private facilities) as appropriate and tested as per ICMR protocol available at
+                https://www.mohfw.gov.in/pdf/Revisedtestingguidelines.pdf.<br> If positive, they will continue in COVID
+                Care Centre and will be managed as per clinical protocol.<br> If negative, the passenger may be allowed
+                to go home, isolate himself/herself, and self-monitor his/her health for further 7 days. In case, any
+                symptoms develop they shall inform the district surveillance officer or the state/national call center
+                (1075).<br> <strong>NOTE: States can also develop their own protocol with regards to quarantine and
+                    isolation as per their assessment.</strong></p>
         </div>
     </div>
 
-    <div class="sidebar">
+    <div id="mySidebar" class="sidebar_amp">
+
+        <button><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></button> 
         <a href="./domestic.html">Guidelines for Domestic Travelers</a>
         <a href="./International.html">Guidelines for International Travelers</a>
         <a href="./general.html">Stay Safe at Home</a>
@@ -108,6 +145,19 @@
 
     </div>
     <!-- scripts -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "200px";
+            document.getElementById("main").style.marginLeft = "200px";
+        }
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
     <script src="./dist/app-bundle.js"></script>
 </body>
+
 </html>
